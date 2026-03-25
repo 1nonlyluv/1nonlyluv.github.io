@@ -12,3 +12,7 @@ name: Deploy Bandi Program Webapp
       - "bandi_program/build_program_schedule_bundle.py"
       - ".github/workflows/deploy-bandi-program-webapp.yml"
   workflow_dispatch:
+cd "/Users/jimmychoi/Library/Mobile Documents/com~apple~CloudDocs/bandihr"
+git add .github/workflows/deploy-bandi-program-webapp.yml
+git commit -m "Fix GitHub Pages workflow trigger"
+git push origin main
