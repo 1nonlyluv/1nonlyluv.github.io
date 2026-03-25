@@ -1,1 +1,14 @@
+name: Deploy Bandi Program Webapp
 
+"on":
+  push:
+    branches:
+      - main
+    paths:
+      - "bandi_program/webapp/**"
+      - "bandi_program/data/generated/program_schedule_week2.json"
+      - "bandi_program/data/generated/program_schedule_week3.json"
+      - "bandi_program/data/generated/program_schedule_week4.json"
+      - "bandi_program/build_program_schedule_bundle.py"
+      - ".github/workflows/deploy-bandi-program-webapp.yml"
+  workflow_dispatch:
